@@ -1,16 +1,92 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather dashboard built with React that allows users to search for cities and view current weather conditions and a multi-day forecast.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://omargomaa702.github.io/Weather-Dashboard/
 
-## React Compiler
+## About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Weather Dashboard is a React-based weather application that provides real-time weather information for cities around the world.
 
-## Expanding the ESLint configuration
+Users can search for a city using an autocomplete search field and view:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Current temperature
+- Weather condition
+- Weather description
+- Feels-like temperature
+- Humidity
+- Wind speed
+- Pressure
+- Sunrise and sunset
+- Daily weather forecast
+
+The application uses external APIs to retrieve city and weather data.
+
+## Features
+
+- City search with autocomplete
+- Real-time weather data
+- Current weather information
+- Multi-day weather forecast
+- Weather icons
+- Responsive design
+- Loading state
+- Error handling
+- Dynamic city selection
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+- OpenWeather API
+- GeoDB Cities API
+- React Select
+- React Async Paginate
+
+## APIs
+
+### OpenWeather API
+
+Used to retrieve:
+
+- Current weather data
+- Weather conditions
+- Temperature
+- Humidity
+- Wind information
+- Forecast data
+
+### GeoDB Cities API
+
+Used for city search and autocomplete functionality.
+
+## Project Structure
+
+```text
+Weather-Dashboard/
+│
+├── public/
+│   └── icons/
+│
+├── src/
+│   ├── components/
+│   │   ├── CurrentWeather/
+│   │   ├── Forecast/
+│   │   └── Search/
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
